@@ -1,0 +1,197 @@
+/* ESTILOS */
+body {
+    font-family: 'Poppins', sans-seri;
+
+    background-color: black;
+    background: linear-gradient(-90deg, #6d084b, #410505, #5e419e, #0e613a); /* angulo de animacion y colores */
+    background-size: 400% 400%; /* Aumentamos el tamaño del fondo para que se mueva */
+    animation: gradientBG 15s ease infinite; /* Aplicamos la animación */
+
+}
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.contenido:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: all 0.8s ease;
+
+     /* Efecto borroso */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+.contenido {
+     /* Centra el contenedor en el medio de la pagina */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+
+     /* Iluminacion*/
+    box-shadow: 0 0 15px rgba(37, 211, 102, 0.5);
+
+    text-align: center; /* Centra el texto horizontalmente */
+    width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    max-width: 1080px; /* Limita el ancho máximo del contenedor */
+    padding: 20px; /* Añade espacio interno */
+    margin: 20px auto; /* Espacio exterior (arriba/abajo: 20px, izquierda/derecha: auto) */
+
+    
+}
+
+@media (max-width: 768px) {
+    .contenido {
+        max-width: 90%; /* Reducimos el ancho máximo */
+        padding: 15px; /* Reducimos el padding */
+    }
+
+    h1 {
+        font-size: 2rem; /* Reducimos el tamaño del título */
+    }
+}
+
+/* Media query para móviles */
+@media (max-width: 480px) {
+    .contenido {
+        max-width: 100%; /* Ocupa todo el ancho disponible */
+        padding: 10px; /* Reducimos aún más el padding */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Reducimos más el tamaño del título */
+    }
+
+    p {
+        font-size: 0.9rem; /* Reducimos el tamaño del texto */
+    }
+}
+
+#opccionusuario {
+    
+    border: 2px solid #abcab7;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 16px;
+    padding: 3px 12px;
+}
+.inicio {
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-weight: 820;
+    
+     /* Efecto borroso */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+
+    /* Iluminacion*/
+    box-shadow: 0 0 15px rgba(216, 231, 9, 0.959);
+
+    text-align: center; /* Centra el texto horizontalmente */
+}
+.redes-png:hover {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease;
+}
+#botonWhatsApp {
+
+    font-family: 'Poppins', sans-ser ;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 4px 6px; /* controlar el tamaño del boton*/
+    background-color: #25D366; /* Color de WhatsApp */
+    color: black;
+    border: 1px solid white; /* Añadí un borde para mejor visibilidad */
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex; /* Usar Flexbox */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 6px; /* Espacio entre la imagen y el texto */
+
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+.redes {
+    background: #2e3126;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+.redes-png{
+    width: 47px;
+}
+.wapp {
+    width: 25px;
+    height: auto;
+}
+.ing {
+    width: 20px;
+}
+.sub1 {
+    color: gold;
+}
+.sub2 {
+    color: whitesmoke;
+}
+h4 {
+    color: whitesmoke;
+}
+h5 {
+    color: whitesmoke;
+}
+.escriwapp {
+    font-weight: 500;
+    color: yellow;
+}
+
+.netflix {
+    color: rgb(231, 38, 38);
+    /* padding: 10px;   */
+}
+.netpng {
+    width: 200px;
+}
+
+.amazon {
+    color: rgb(47, 161, 236);
+}
+.amapng {
+    width: 200px;
+}
+
+.hbo {
+    color: blueviolet;
+}
+.hbopng {
+    width: 218px;
+}
+
+.spo {
+    color: rgb(77, 204, 77);
+}
+.spopng {
+    width: 200px;
+}
+
+.disney {
+    color: aqua;
+}
+.dispng {
+    width: 190px;
+    height: 110px;
+}
+
+.info {
+    color: rgb(255, 153, 0);
+}
+
+p {
+    color: whitesmoke;
+}
+
